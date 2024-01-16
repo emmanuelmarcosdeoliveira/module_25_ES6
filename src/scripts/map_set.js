@@ -44,6 +44,7 @@ const array = [
 ];
 
 const arrayComoSet = new Set([...array]);
+
 const arraysSemItemDuplicados = [...arrayComoSet];
 
 console.log(arrayComoSet);

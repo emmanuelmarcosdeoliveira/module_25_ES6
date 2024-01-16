@@ -3,8 +3,9 @@ const redesSociais = ["Facebook", "Instagran", "Twitter"];
 for (let i = 0; i < redesSociais.length; i++) {
   console.log(`Eu tenho perfil nas Rede social : ${redesSociais[i]}`);
 }
+
 redesSociais.forEach((item, indice) => {
-  console.log(`Eu tenho perfil nas Rede social : ${(item, indice)}`);
+  console.log(`Eu tenho perfil nas Rede social : ${item}, ${indice}`);
 });
 
 const alunos = ["Gustavo", "Julia", "Paula", "Wagner"];
@@ -18,9 +19,8 @@ const meusAlunos = alunos.map(function (itemAtual) {
 console.log(meusAlunos);
 
 const paula = meusAlunos.find(function (item) {
-  return item.nome == "Paulo"; // true ou false
+  return item.nome == "Paula"; // true ou false
 });
-
 console.log(paula);
 
 const indiceDaPaula = meusAlunos.findIndex(function (item) {

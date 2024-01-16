@@ -5,7 +5,7 @@ for (var i = 0; i < redesSociais.length; i++) {
   console.log("Eu tenho perfil nas Rede social : ".concat(redesSociais[i]));
 }
 redesSociais.forEach(function (item, indice) {
-  console.log("Eu tenho perfil nas Rede social : ".concat((item, indice)));
+  console.log("Eu tenho perfil nas Rede social : ".concat(item, ", ").concat(indice));
 });
 var alunos = ["Gustavo", "Julia", "Paula", "Wagner"];
 var meusAlunos = alunos.map(function (itemAtual) {
@@ -16,7 +16,7 @@ var meusAlunos = alunos.map(function (itemAtual) {
 });
 console.log(meusAlunos);
 var paula = meusAlunos.find(function (item) {
-  return item.nome == "Paulo"; // true ou false
+  return item.nome == "Paula"; // true ou false
 });
 console.log(paula);
 var indiceDaPaula = meusAlunos.findIndex(function (item) {
